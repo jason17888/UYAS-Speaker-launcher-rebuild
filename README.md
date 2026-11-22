@@ -3,6 +3,15 @@
 為 **UYAS Play 智慧喇叭**（原廠雲端 `api.uyas.tw` 已關閉）安裝替代桌面 **UYAS X**。
 提供 YouTube、Spotify、螢幕保護（時鐘＋天氣）和實體按鍵處理。
 
+分析
+
+原有註冊登入服務器已關閉
+串接youtube api額度滿
+氣象來源服務器已關閉
+
+本專案模仿原有風格提供取代系統Launcher,但部分功能尚未可行,原因為此機器為android8.1版本,GMS不允許給予登入(安全過時風險),因此
+1.語音控制無法使用
+
 > ⚠️ **這會修改你的喇叭。** 基本安裝只動 `/data`，可完整還原；選用的 WebView 升級會改 `/system`，
 > 有風險。請先讀完「風險與限制」。作者不保證任何結果，風險自負。
 
@@ -26,7 +35,7 @@
 | 0 | 在喇叭上開啟無線 adb（喇叭沒有 USB 孔） | 低 | [docs/01-enable-wireless-adb.md](docs/01-enable-wireless-adb.md) |
 | 1 | 相容性檢查（唯讀） | 無 | [docs/02-install.md](docs/02-install.md) |
 | 2 | 安裝 UYAS X、設為預設桌面、停用原廠 `StartupActivity` | 低 | [docs/02-install.md](docs/02-install.md) |
-| 3 | （選用）WebView 61 → 138 | **高** | [docs/03-webview.md](docs/03-webview.md) |
+| 3 | （必要）WebView 61 → 138 | **高** | [docs/03-webview.md](docs/03-webview.md) |
 | - | 還原 | - | [docs/04-restore.md](docs/04-restore.md) |
 
 ## 最簡單：雙擊 uyasx-install.bat

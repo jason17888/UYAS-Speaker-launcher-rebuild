@@ -29,6 +29,15 @@
 | 3 | （選用）WebView 61 → 138 | **高** | [docs/03-webview.md](docs/03-webview.md) |
 | - | 還原 | - | [docs/04-restore.md](docs/04-restore.md) |
 
+## 最簡單：雙擊 uyasx-install.bat
+
+完成步驟 0（開啟無線 adb）後，雙擊專案根目錄的 uyasx-install.bat，輸入喇叭 IP，依選單操作：
+檢查、安裝、WebView 升級、還原都在選單裡。找不到 adb 時會詢問是否從 Google 下載 platform-tools；
+找不到 APK 時會從本 repo 的 Releases 下載，安裝前一樣會驗證 SHA-256。
+選單裡有 dry run 選項，可先看會做什麼而不改動喇叭。喇叭位址會記在 device.txt。
+
+下面是手動執行各腳本的方式。
+
 ## 快速開始（Windows）
 
 需要：Windows、[Android platform-tools](https://developer.android.com/tools/releases/platform-tools)（`adb`）、Powershell 5.1 以上。

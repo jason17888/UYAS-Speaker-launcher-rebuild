@@ -6,3 +6,5 @@ cache/
 # APK is distributed through GitHub Releases, not the repo.
 # Download it into apk/ next to SHA256SUMS.txt (see README).
 *.apk
+device.txt
+tools/
